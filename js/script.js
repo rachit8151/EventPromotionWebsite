@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
             alertBox.classList.add("error");
         }
 
-        // auto hide after 3 sec
         setTimeout(() => {
             alertBox.classList.add("hidden");
         }, 3000);
@@ -38,7 +37,6 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        // SUCCESS
         showAlert("Registration Successful 🎉");
 
         if (sound) {
@@ -49,7 +47,6 @@ document.addEventListener("DOMContentLoaded", function () {
         form.reset();
     });
 
-    /* ===== HORIZONTAL MOUSE SCROLL ===== */
     const eventScroll = document.getElementById("eventScroll");
 
     if (eventScroll) {
@@ -63,7 +60,6 @@ document.addEventListener("DOMContentLoaded", function () {
         );
     }
 
-    /* ===== SCHEDULE DAY TOGGLE ===== */
     const daySelect = document.getElementById("daySelect");
     const day1 = document.getElementById("day1");
     const day2 = document.getElementById("day2");

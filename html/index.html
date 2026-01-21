@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BMIIT Tech Event</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header id="home">
+        <nav>
+            <div class="logo">
+                <img src="../images/bmiitLogo.png" alt="BMIIT Logo">
+                <span class="brand-text">TechFest</span>
+            </div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#tracks">Tracks</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#register">Register</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero">
+            <h1>Babu Madhav Institute of Information Technology Technical Event 2026</h1>
+            <p>25 March 2026 | BMIIT Campus</p>
+            <a href="#register" class="btn">Register Now</a>
+        </div>
+    </header>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about">
+        <h2>About The Event</h2>
+        <p>
+            <strong>Techotsav 2026</strong> is a two-day national-level technical and
+            non-technical fest organized by
+            <strong>Babu Madhav Institute of Information Technology (BMIIT)</strong>.
+            The event is designed to provide a platform for students to showcase their
+            technical skills, creativity, innovation, and teamwork.
+        </p>
+
+        <p>
+            The fest includes a wide range of activities such as coding competitions,
+            technical challenges, design events, exhibitions, debates, and creative
+            competitions. Techotsav aims to encourage learning beyond classrooms while
+            promoting collaboration, problem-solving, and fun.
+        </p>
+    </section>
+
+
+    <!-- ===== TRACKS ===== -->
+    <section id="tracks">
+        <h2>Event Highlights</h2>
+        <div class="scroll-container" id="eventScroll">
+
+            <div class="event-card technical">
+                <span class="icon">💻</span>
+                <p>Relay Coding</p>
+            </div>
+
+            <div class="event-card technical">
+                <span class="icon">🧑‍💻</span>
+                <p>Blind Coding</p>
+            </div>
+
+            <div class="event-card technical">
+                <span class="icon">⚡</span>
+                <p>Vibe Coding</p>
+            </div>
+
+            <div class="event-card technical">
+                <span class="icon">🗄️</span>
+                <p>SQL Battle</p>
+            </div>
+
+            <div class="event-card technical">
+                <span class="icon">🎨</span>
+                <p>Website Designing</p>
+            </div>
+
+            <div class="event-card technical">
+                <span class="icon">🧠</span>
+                <p>Quiz</p>
+            </div>
+
+            <div class="event-card technical">
+                <span class="icon">🎤</span>
+                <p>Tech Debate</p>
+            </div>
+
+            <div class="event-card non-technical">
+                <span class="icon">🗺️</span>
+                <p>Treasure Hunt</p>
+            </div>
+
+            <div class="event-card non-technical">
+                <span class="icon">⌨️</span>
+                <p>Fastest Finger First</p>
+            </div>
+
+            <div class="event-card non-technical">
+                <span class="icon">🎬</span>
+                <p>Short Film</p>
+            </div>
+
+            <div class="event-card non-technical">
+                <span class="icon">📸</span>
+                <p>Photography</p>
+            </div>
+
+            <div class="event-card non-technical">
+                <span class="icon">📱</span>
+                <p>Reel Making</p>
+            </div>
+
+            <div class="event-card non-technical">
+                <span class="icon">🎮</span>
+                <p>E-Sports</p>
+            </div>
+
+            <div class="event-card innovation">
+                <span class="icon">🤖</span>
+                <p>IoT Exhibition</p>
+            </div>
+
+            <div class="event-card activity">
+                <span class="icon">📊</span>
+                <p>Infographic Presentation</p>
+            </div>
+
+            <div class="event-card activity">
+                <span class="icon">🎉</span>
+                <p>Inauguration Ceremony</p>
+            </div>
+
+            <div class="event-card activity">
+                <span class="icon">🏁</span>
+                <p>Valedictory Function</p>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- ===== SCHEDULE ===== -->
+    <section id="schedule">
+        <h2>Event Schedule</h2>
+
+        <!-- Day Selector -->
+        <select id="daySelect">
+            <option value="day1">Day 1</option>
+            <option value="day2">Day 2</option>
+        </select>
+
+        <!-- DAY 1 TABLE -->
+        <table id="day1" class="schedule-table">
+            <tr>
+                <th>Time</th>
+                <th>Event</th>
+            </tr>
+            <tr>
+                <td>09:00 – 09:30</td>
+                <td>Inauguration Ceremony</td>
+            </tr>
+            <tr>
+                <td>09:30 – 11:00</td>
+                <td>Relay Coding</td>
+            </tr>
+            <tr>
+                <td>10:00 – 12:00</td>
+                <td>Treasure Hunt</td>
+            </tr>
+            <tr>
+                <td>11:00 – 01:00</td>
+                <td>SQL Battle</td>
+            </tr>
+            <tr>
+                <td>01:00 – 03:30</td>
+                <td>Infographic Presentation</td>
+            </tr>
+        </table>
+
+        <!-- DAY 2 TABLE -->
+        <table id="day2" class="schedule-table hidden">
+            <tr>
+                <th>Time</th>
+                <th>Event</th>
+            </tr>
+            <tr>
+                <td>09:00 – 11:00</td>
+                <td>Blind Coding</td>
+            </tr>
+            <tr>
+                <td>10:00 – 12:00</td>
+                <td>Tech Debate</td>
+            </tr>
+            <tr>
+                <td>11:00 – 01:30</td>
+                <td>Vibe Coding</td>
+            </tr>
+            <tr>
+                <td>12:00 – 02:00</td>
+                <td>Website Designing</td>
+            </tr>
+            <tr>
+                <td>02:00 onwards</td>
+                <td>Valedictory Function</td>
+            </tr>
+        </table>
+    </section>
+
+
+    <!-- ===== REGISTRATION ===== -->
+    <section id="register">
+        <h2>Register Student</h2>
+        <form id="regForm">
+            <input type="text" id="name" placeholder="Your Name">
+            <input type="email" id="email" placeholder="Email Address">
+            <input type="text" id="college" placeholder="College Name">
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <p id="message"></p>
+
+    <!-- success sound -->
+    <audio id="successSound" src="../sounds/tring.mp3"></audio>
+
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p>Contact: techfest@bmiit.ac.in | +91 98765 43210</p>
+        <div class="socials">
+            <span>🌐</span>
+            <span>📘</span>
+            <span>📸</span>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <!-- Custom Alert -->
+    <div id="customAlert" class="alert hidden">
+        <span id="alertText"></span>
+    </div>
+</body>
+
+</html>

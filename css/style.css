@@ -1,0 +1,270 @@
+/* ===== GLOBAL RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f8fafc;
+    color: #1e293b;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: white;
+    padding-bottom: 50px;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* ===== LOGO ===== */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.brand-text {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* ===== HERO ===== */
+.hero {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: white;
+    color: #2563eb;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* ===== SECTIONS ===== */
+section {
+    padding: 60px 80px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+/* ===== ABOUT ===== */
+#about p {
+    max-width: 900px;
+    margin: 15px auto;
+    line-height: 1.8;
+    font-size: 16px;
+    color: #334155;
+}
+
+/* ===== EVENT HIGHLIGHTS (HORIZONTAL SCROLL) ===== */
+.scroll-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 20px 10px;
+    scrollbar-width: none;
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.event-card {
+    min-width: 220px;
+    height: 160px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.event-card:hover {
+    transform: translateY(-8px);
+}
+
+.event-card .icon {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.event-card p {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.technical { border-top: 5px solid #2563eb; }
+.non-technical { border-top: 5px solid #16a34a; }
+.innovation { border-top: 5px solid #f97316; }
+.activity { border-top: 5px solid #9333ea; }
+
+/* ===== SCHEDULE TABLE FIX ===== */
+.schedule-table {
+    width: 90%;
+    margin: 20px auto;
+    background: white;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+}
+
+.schedule-table th {
+    background: #0b5ed7;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+}
+
+/* column alignment */
+.schedule-table th:first-child,
+.schedule-table td:first-child {
+    text-align: center;   /* Time */
+    width: 30%;
+}
+
+.schedule-table th:last-child,
+.schedule-table td:last-child {
+    text-align: left;     /* Event */
+    width: 70%;
+}
+
+.schedule-table td {
+    padding: 16px 20px;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 15px;
+}
+
+.schedule-table tr:last-child td {
+    border-bottom: none;
+}
+
+.schedule-table tr:hover {
+    background-color: #eef2ff;
+}
+
+/* ===== REGISTRATION FORM (UNIQUE DESIGN) ===== */
+#register {
+    background: linear-gradient(135deg, #eef2ff, #f8fafc);
+}
+
+form {
+    max-width: 420px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+form input {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    font-size: 15px;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+form button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 15px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #1e40af;
+}
+
+/* ===== CUSTOM ALERT ===== */
+.alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #16a34a;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.alert.error {
+    background: #dc2626;
+}
+
+.hidden {
+    display: none;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.socials span {
+    margin: 0 10px;
+    font-size: 20px;
+}
